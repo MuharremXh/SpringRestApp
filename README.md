@@ -1,0 +1,3 @@
+# SpringRestApp
+This is a simple REST Api done using Spring Boot,Spring MVC Rest,Hibernate(Jpa) and Jackson.
+Adding REST endpoints later on....
