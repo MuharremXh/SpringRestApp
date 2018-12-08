@@ -1,4 +1,4 @@
-package com.rremi.rest_app;
+package com.rremi.rest_app.errorHandling;
 
 //exception to indicate that the requested user does not exists
 public class UserNotFoundException extends RuntimeException {

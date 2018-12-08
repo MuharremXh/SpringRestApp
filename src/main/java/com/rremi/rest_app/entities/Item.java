@@ -1,4 +1,4 @@
-package com.rremi.rest_app;
+package com.rremi.rest_app.entities;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
@@ -20,6 +20,7 @@ public class Item {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JsonBackReference
+    @NotNull
     private User itemOwner;
 
     @OneToMany(mappedBy = "orderedItem",cascade = {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.REMOVE})

@@ -1,4 +1,4 @@
-package com.rremi.rest_app;
+package com.rremi.rest_app.errorHandling;
 
 //will be returned to the user with the specified message when an error within the application will happen
 public class Error {

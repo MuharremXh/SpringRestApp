@@ -1,4 +1,7 @@
-package com.rremi.rest_app;
+package com.rremi.rest_app.entities;
+
+import com.rremi.rest_app.entities.Item;
+import com.rremi.rest_app.entities.User;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;

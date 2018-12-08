@@ -1,5 +1,9 @@
-package com.rremi.rest_app;
+package com.rremi.rest_app.controllers;
 
+import com.rremi.rest_app.errorHandling.Error;
+import com.rremi.rest_app.errorHandling.UserNotFoundException;
+import com.rremi.rest_app.entities.User;
+import com.rremi.rest_app.repositories.userRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -8,7 +12,7 @@ import java.util.List;
 
 @RestController("/")
 public class UserController {
-    private userRepository userRepository;
+    private com.rremi.rest_app.repositories.userRepository userRepository;
 
     @Autowired
     public void setUserRepository(userRepository userRepository) {

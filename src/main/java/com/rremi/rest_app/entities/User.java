@@ -1,4 +1,4 @@
-package com.rremi.rest_app;
+package com.rremi.rest_app.entities;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 

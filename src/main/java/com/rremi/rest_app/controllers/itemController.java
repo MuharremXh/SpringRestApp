@@ -1,5 +1,12 @@
-package com.rremi.rest_app;
+package com.rremi.rest_app.controllers;
 
+import com.rremi.rest_app.errorHandling.Error;
+import com.rremi.rest_app.errorHandling.UserNotFoundException;
+import com.rremi.rest_app.entities.Item;
+import com.rremi.rest_app.entities.User;
+import com.rremi.rest_app.errorHandling.itemNotFoundExcwption;
+import com.rremi.rest_app.repositories.itemRepository;
+import com.rremi.rest_app.repositories.userRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -9,8 +16,8 @@ import java.util.List;
 @RestController
 public class itemController {
 
-    private userRepository userRepository;
-    private itemRepository itemRepository;
+    private com.rremi.rest_app.repositories.userRepository userRepository;
+    private com.rremi.rest_app.repositories.itemRepository itemRepository;
 
     @Autowired
     public itemController(userRepository userRepository,itemRepository itemRepository) {
@@ -37,6 +44,7 @@ public class itemController {
         return itemRepository.findAllByItemOwner(user);
     }
 
+    @PostMapping("/items/addItem")
     public Item addItem(@RequestBody Item item){
         itemRepository.save(item);
         return itemRepository.findById(item.getId()).orElseThrow(() -> new itemNotFoundExcwption(item.getId()));

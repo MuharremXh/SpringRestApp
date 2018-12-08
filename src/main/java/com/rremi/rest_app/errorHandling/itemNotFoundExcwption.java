@@ -1,4 +1,4 @@
-package com.rremi.rest_app;
+package com.rremi.rest_app.errorHandling;
 
 //exception to indicate that the requested item does not exist
 public class itemNotFoundExcwption extends RuntimeException {

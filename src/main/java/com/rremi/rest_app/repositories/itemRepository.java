@@ -1,7 +1,8 @@
-package com.rremi.rest_app;
+package com.rremi.rest_app.repositories;
 
+import com.rremi.rest_app.entities.Item;
+import com.rremi.rest_app.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
