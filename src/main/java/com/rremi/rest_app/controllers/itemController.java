@@ -16,8 +16,8 @@ import java.util.List;
 @RestController
 public class itemController {
 
-    private com.rremi.rest_app.repositories.userRepository userRepository;
-    private com.rremi.rest_app.repositories.itemRepository itemRepository;
+    private userRepository userRepository;
+    private itemRepository itemRepository;
 
     @Autowired
     public itemController(userRepository userRepository,itemRepository itemRepository) {
