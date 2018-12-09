@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController("/")
 public class UserController {
-    private com.rremi.rest_app.repositories.userRepository userRepository;
+    private userRepository userRepository;
 
     @Autowired
     public void setUserRepository(userRepository userRepository) {
