@@ -15,3 +15,6 @@ POST {
 Note: You need to add a user field and give his id,because an item needs to have an owner
 }
 
+
+Note:Go to application.properties and configure your database properties for your schema
+
