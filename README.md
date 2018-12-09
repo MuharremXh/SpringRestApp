@@ -1,7 +1,7 @@
 # SpringRestApp
-This is a simple REST Api done using Spring Boot,Spring MVC Rest,Hibernate(Jpa) and Jackson.
+This is a simple REST API done using Spring Boot,Spring MVC Rest,Hibernate(Jpa) and Jackson.
 
-Endpoints for the application:
+Endpoints for the application: 
 GET {
 /users -> shows a list of current users
 /users/{id} -> shows the details for the specific user given his id,or show an error message if user not presetn
@@ -11,6 +11,7 @@ GET {
 
 POST {
 /users/addUser -> takes an user in Json and returns him if it is succesfully created
-/items/addItem -> takes an item in Json and returns it if it is succesfully created.Note: You need to add a user field and give his id,because an item needs to have an owner
+/items/addItem -> takes an item in Json and returns it if it is succesfully created.
+Note: You need to add a user field and give his id,because an item needs to have an owner
 }
 
